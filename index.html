@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub</title>
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Foodie<span>Hub</span></h1>
+        <nav class="navbar">
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <input type="search" name="" id="search-card" placeholder="search_food">
+        <div class="icons">
+            <i class="fa-solid fa-bars" id="menu-toggle"></i>
+            <i class="fas fa-shopping-cart" id="cart-icon"></i>
+        </div>
+    </header>
+   <div class="foodbanner">
+       <!-- Header Section -->
+       
+       
+       <!-- Banner Section -->
+       <header class="banner">
+           <div class="banner-content">
+               <h1>Welcome to Taste of India</h1>
+               <p>Experience the flavors of authentic Indian cuisine</p>
+               <a href="#menu" class="btn">Explore Menu</a>
+           </div>
+       </header>
+    
+       <!-- Menu Section -->
+       <section id="menu">
+           <h2>Our Specialties</h2>
+           <p>Discover our wide range of delicious Indian dishes.</p>
+       </section>
+      
+       <!-- Shopping Cart Section -->
+       <div class="cart">
+           <div class="cart-title">Cart Items</div>
+           <div class="cart-content">
+               <!-- Cart items will be dynamically inserted here -->
+           </div>
+           
+           <div class="total">
+               <div class="total-title">Total</div>
+               <div class="total-price">Rs.0</div>
+           </div>
+           
+           <button class="btn-buy">Place Order</button>
+           <ion-icon name="close" id="cart-close">x</ion-icon>
+       </div>
+   </div>
+   <!-- about -->
+ 
+   <!-- About Service Cards Section -->
+   <section class="serive_card">
+       <div class="serice">
+           <div class="menuservice">
+               <div class="serive_menu">
+                   <i class="fas fa-utensils"></i>
+                   <h4>Delicious Dishes</h4>
+                   <p>Explore our wide range of mouth-watering cuisines.</p>
+               </div>
+           </div>
+           <div class="menuservice">
+               <div class="serive_menu">
+                   <i class="fas fa-truck"></i>
+                   <h4>Fast Delivery</h4>
+                   <p>Get your favorite food delivered hot and fresh.</p>
+               </div>
+           </div>
+           <div class="menuservice">
+               <div class="serive_menu">
+                   <i class="fas fa-seedling"></i>
+                   <h4>Fresh Ingredients</h4>
+                   <p>We use only the freshest ingredients for every dish.</p>
+               </div>
+           </div>
+       </div>
+   </section>
+   <section class="about">
+    <div class="about_food">
+        <div class="food_about">
+            <div class="abut_menus">
+                <h1>coooked By  the Best Chefs The World</h1>
+                <p>Experience culinary excellence crafted by master chefs</p>
+                <p>from around the globe our team of culinary virtuosos</p>
+                <p>create unforgettable dining experiences that redefine <br>
+                gastronomy</p>
+<div class="chefs_about">
+    <h3>savour cullinary brilliance from master chefs <br> worldwide</h3>
+    <h3>Experience innovative creations with attention to <br> detail</h3>
+    <h3>Enjoy dishes crafted with an unwavering passion for perfection </h3>
+</div>
+            </div>
+        </div>
+        <div class="food_about">
+            <div class="abut_menus">
+                <img src="https://freedesignfile.com/upload/2018/08/Chef-illustration-vectors.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- Menu Card Section -->
+    <h1 class="menu_center">menus</h1>
+   <div class="menu_card" id="dish-container">
+       <input type="number" value="1" class="cart-quantity" oninput="updateTotal()" min="1">
+   </div>
+  
+   <!-- Contact Form Section -->
+   <section class="form_controls">
+       <div class="form_cntact">
+           <div class="content_addresh">
+               <div class="daress">
+                   <h1>Address</h1>
+                   <p>136 Arani-Chiyyar Road, Mambakkam</p>
+               </div>
+               <div class="daress">
+                   <h1>Email</h1>
+                   <p>lprathap381@gmail.com</p>
+               </div>
+               <div class="daress">
+                   <h1>Telephone</h1>
+                   <p>9361562206</p>
+               </div>
+           </div>
+          
+           <div class="form-cntrol">
+               <form action="" id="formvalidation">
+                   <h1>Contact Us</h1>
+                   <div class="group-form">
+                       <label for="name">Name</label>
+                       <input type="text" id="name">
+                   </div>
+                   <div class="group-form">
+                       <label for="email">Email</label>
+                       <input type="email" id="email">
+                   </div>
+                   <div class="group-form">
+                       <label for="message">Message</label>
+                       <textarea name="" id="message"></textarea>
+                   </div>
+                   <button type="submit" id="submit_btn">Submit</button>
+               </form>
+           </div> 
+       </div>
+   </section>
+    <!-- Footer Section -->
+   <section class="Footer">
+    <footer>
+        <div class="footer_detail">
+            <h1>Foodie <span style="color: yellow;">Hub</span></h1>
+            <p>Embark an a gastronomic journey with foodman where every bite a story and every dish is crafted to perfection</p>
+        </div>
+        <div class="footer_detail">
+            <ul>
+                <h1>product</h1>
+                <li>menu</li>
+                <li>specials</li>
+                <li>meal Deals</li>
+                <li>catering options</li>
+                <li>seasonnal offerings</li>
+                
+            </ul>
+        </div>
+        <div class="footer_detail">
+            <ul>
+                <h1>infrmation</h1>
+                <li>About Us</li>
+                <li>contact Us</li>
+                <li>meal Deals</li>
+                <li>nutration information</li>
+                <li>Allergen  information</li>
+                
+                
+            </ul>
+        </div>
+        <div class="footer_detail">
+            <ul>
+                <h1>product</h1>
+                <li>menu</li>
+                <li>specials</li>
+                <li>meal Deals</li>
+                <li>catering options</li>
+                <li>seasonnal offerings</li>
+                
+            </ul>
+        </div>
+    </footer>
+   </section>
+</body>
+<!-- Linking external JavaScript file -->
+<script src="scripth.js"></script>
+</html>
+
